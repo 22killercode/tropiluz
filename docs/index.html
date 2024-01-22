@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 
@@ -20,8 +22,8 @@
 			</header>
 
 		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
+			<nav id="menu" style="background-color: skyblue;">
+				<ul class="links" style="font-weight: bold;">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="generic.html">¿Quien Es Mario Pereyra?</a></li>
 					<li><a href="https://teamsoftdigital.com/tropiluzradio">Ir a nuestra radio Tropiluz</a></li>
@@ -182,35 +184,37 @@ transition: transform 0.3s ease-out;
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
+			<footer id="footer"  style="background-color: skyblue; color: black !important;">
 				<div class="inner" id="contacto">
 
 					<h2>Contacto</h2>
 
 					<form action="#" method="post">
 
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input name="name" id="name" type="text" placeholder="Name">
+						<div class="field half first" >
+							<label for="name" style=" color: black !important; font-weight: bold;">Nombre</label>
+							<input style="border-color: black !important; color:black" name="name" id="name" type="text" placeholder="Name">
 						</div>
 						<div class="field half">
-							<label for="email">Email</label>
-							<input name="email" id="email" type="email" placeholder="Email">
+							<label for="email" style=" color: black !important; font-weight: bold;">Email</label>
+							<input style="border-color: black !important; color:black" name="email" id="email" type="email" placeholder="Email">
 						</div>
 						<div class="field half first">
-							<label for="name">Pais y ciudad</label>
-							<input name="name" id="name" type="text" placeholder="Name">
+							<label for="name" style=" color: black !important; font-weight: bold;">Pais y ciudad</label>
+							<input style="border-color: black !important; color:black" name="name" id="name" type="text" placeholder="Name">
 						</div>
 						<div class="field half">
-							<label for="email">Celular</label>
-							<input name="email" id="email" type="email" placeholder="Email">
+							<label for="email" style=" color: black !important; font-weight: bold;">Celular</label>
+							<input style="border-color: black !important; color:black" name="email" id="email" type="email" placeholder="Email">
 						</div>
 						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+							<label for="message" style=" color: black !important; font-weight: bold;">Mensage</label>
+							<textarea style="border-color: black !important; " name="message" id="message" rows="6" placeholder="Message"></textarea>
 						</div>
 						<ul class="actions">
-							<li><input value="Enviar mensaje" class="button alt" type="submit"></li>
+							<li>
+								<input style="border-color: black !important; " value="Enviar mensaje" class="button alt" type="submit">
+							</li>
 						</ul>
 					</form>
 
