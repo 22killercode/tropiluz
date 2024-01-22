@@ -128,20 +128,26 @@
 				position: relative;
 				overflow: hidden;
 				height: 100vh;
+				width: 100%;
+				padding: 0;
+				background-color:aquamarine
 			}
 		
 			.container {
-				max-width: 600px; /* Ajuste del ancho del contenedor */
-				margin: 0 auto;
-				padding: 20px;
+				padding: 0.5rem;
+				background-color:rgb(52, 50, 50);
+				border-radius: 1rem;
+				max-width: 860px; /* Ajuste del ancho del contenedor */
+				margin: 0 ;
 				position: relative;
-				opacity: 0;
+				opacity: 0.95 !important;
 				transform: translateY(20px);
 				transition: opacity 1s ease-out, transform 1s ease-out;
 			}
 		
 			.content-article {
 				text-align: center;
+				width: 100%;
 			}
 
 		
@@ -161,14 +167,14 @@
 		
 			.content-image {
 				flex: 1;
-				opacity: 0;
+				opacity: 0.9;
 				transform: translateX(20px);
-				transition: opacity 0.9s ease-out, transform 0.9s ease-out;
 			}
 		
 			img {
-				max-width: 100%; /* Cambiado a 100% para ajustarse al contenedor */
+				max-width: 60%; /* Cambiado a 100% para ajustarse al contenedor */
 				height: auto;
+				margin-left: 0.5rem;
 			}
 		
 			footer {
@@ -209,8 +215,8 @@
 			}
 		</style>
 		
-		<section id="one" class="banner-section post bg-img" data-bg="banner4.jpg">
-			<div class="container">
+		<section id="one" class="banner-section post bg-img" data-bg="banner2.jpg">
+			<div class="container" style="">
 				<article class="content-article">
 					<div>
 						<h2>¿Quién es Mario Pereyra?</h2>
@@ -222,11 +228,11 @@
 								Mario Julio Pereyra nació... Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent.
 							</p>
 						</div>
-						<div class="content-image">
-							<img src="images/mario.jpg" alt="Imagen de Mario Pereyra">
+						<div class="content-image" >
+							<img style="opacity: 0.91 !important;border-radius: 1rem !important;" src="images/mario.jpg" alt="Imagen de Mario Pereyra">
 						</div>
 					</div>
-					<footer>
+					<footer align="left">
 						<a href="generic.html" class="button alt">Saber Más</a>
 					</footer>
 				</article>
