@@ -3329,7 +3329,7 @@
 		left: 0;
 		line-height: 3.25em;
 		position: fixed;
-		text-align: right;
+		text-align: left;
 		top: 1em;
 		width: 100%;
 		z-index: 10001;
@@ -3388,7 +3388,7 @@
 				width: 2.5em;
 				line-height: 2.5em;
 				color: #FFF;
-				text-align: center;
+				text-align: left;
 			}
 
 				#header > a[href="#menu"]:before {
