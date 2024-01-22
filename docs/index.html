@@ -123,153 +123,49 @@
 		
 		
 		<!-- One -->
-		<style>
-			.banner-section {
-				position: relative;
-				overflow: hidden;
-				height: 100vh;
-				width: 100%;
-				padding: 0;
-				background-color:aquamarine
-			}
-		
-			.container {
-				padding: 0.5rem;
-				background-color:rgb(52, 50, 50);
-				border-radius: 1rem;
-				max-width: 860px; /* Ajuste del ancho del contenedor */
-				margin: 0 ;
-				position: relative;
-				opacity: 0.95 !important;
-				transform: translateY(20px);
-				transition: opacity 1s ease-out, transform 1s ease-out;
-			}
-		
-			.content-article {
-				text-align: center;
-				width: 100%;
-			}
-
-		
-			.content-row {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-				margin-top: 20px;
-			}
-		
-			.content-text {
-				flex: 1;
-				opacity: 0;
-				transform: translateX(-20px);
-				transition: opacity 0.9s ease-out, transform 0.9s ease-out;
-			}
-		
-			.content-image {
-				flex: 1;
-				opacity: 0.9;
-				transform: translateX(20px);
-			}
-		
-			img {
-				max-width: 60%; /* Cambiado a 100% para ajustarse al contenedor */
-				height: auto;
-				margin-left: 0.5rem;
-			}
-		
-			footer {
-				margin-top: 20px;
-			}
-		
-			@keyframes fadeInUp {
-				from {
-					opacity: 0;
-					transform: translateY(20px);
-				}
-				to {
-					opacity: 1;
-					transform: translateY(0);
-				}
-			}
-		
-			@keyframes fadeInLeft {
-				from {
-					opacity: 0;
-					transform: translateX(-20px);
-				}
-				to {
-					opacity: 1;
-					transform: translateX(0);
-				}
-			}
-		
-			@keyframes fadeInRight {
-				from {
-					opacity: 0;
-					transform: translateX(20px);
-				}
-				to {
-					opacity: 1;
-					transform: translateX(0);
-				}
-			}
-		</style>
-		
-		<section id="one" class="banner-section post bg-img" data-bg="banner2.jpg">
-			<div class="container" style="">
-				<article class="content-article">
-					<div>
-						<h2>¿Quién es Mario Pereyra?</h2>
-						<p>22.01.2024</p>
-					</div>
-					<div class="content-row">
-						<div class="content-text">
-							<p>
-								Mario Julio Pereyra nació... Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent.
-							</p>
+		<section id="one" class="wrapper post bg-img" data-bg="banner5.jpg">
+			<div class="inner">
+				<article class="box">
+					<header>
+						<h2>Mus elit a ultricies at</h2>
+						<p>12.21.2016</p>
+					</header>
+					<style>
+						/* Estilos generales */
+						.content {
+							width: 60%;
+							float: left;
+						}
+				
+						img {
+							width: 10%;
+							height: auto;
+						}
+				
+						/* Media query para formato landscape (ancho mayor a 600px) */
+						@media only screen and (min-width: 600px) {
+							.content {
+								width: 40%;
+							}
+						}
+					</style>
+				
+					<div class="container">
+						<div class="content">
+							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
 						</div>
-						<div class="content-image" >
-							<img style="opacity: 0.91 !important;border-radius: 1rem !important;" src="images/mario.jpg" alt="Imagen de Mario Pereyra">
+						<div>
+							<img src="images/mario.jpg" alt="">
 						</div>
 					</div>
-					<footer align="left">
-						<a href="generic.html" class="button alt">Saber Más</a>
+					<footer>
+						<a href="generic.html" class="button alt">Learn More</a>
 					</footer>
 				</article>
 			</div>
-			<a href="#two" class="more">Saber más</a>
-		
-			<script>
-				document.addEventListener('DOMContentLoaded', function () {
-					var container = document.querySelector('.container');
-					var header = document.querySelector('header');
-					var text = document.querySelector('.content-text');
-					var image = document.querySelector('.content-image');
-		
-					window.addEventListener('scroll', function () {
-						var scrollPosition = window.scrollY;
-		
-						if (scrollPosition > 100) {
-							container.style.opacity = '1';
-							container.style.transform = 'translateY(0)';
-						}
-		
-						if (scrollPosition > 150) {
-							header.style.opacity = '1';
-							header.style.transform = 'translateY(0)';
-						}
-		
-						if (scrollPosition > 250) {
-							text.style.opacity = '1';
-							text.style.transform = 'translateX(0)';
-							image.style.opacity = '1';
-							image.style.transform = 'translateX(0)';
-						}
-					});
-				});
-			</script>
+			<a href="#three" class="more">Learn More</a>
 		</section>
-		
+
 	
 		<!-- Two -->
 			<section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
