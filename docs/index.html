@@ -218,6 +218,45 @@ transition: transform 0.3s ease-out;
 						</ul>
 					</form>
 
+	
+		<div align="right">
+			<!-- Back To Top Button -->
+			<script>
+
+				/* BACK TO TOP BUTTON */
+				// GET THE BUTTON
+				myButton = document.getElementById("myBtn");
+				
+				// WHEN THE USER SCROLLS DOWN 20PX FROM THE TOP OF THE DOCUMENT, SHOW THE BUTTON
+				function scrollFunctionBTT() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						myButton.style.display = "block";
+					} else {
+						myButton.style.display = "none";
+					}
+				}
+				
+				// WHEN THE USER CLICKS ON THE BUTTON, SCROLL TO THE TOP OF THE DOCUMENT
+				function topFunction() {
+					document.body.scrollTop = 0; // for Safari
+					document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+				}
+				
+				// AOS ANIMATION ON SCROLL
+				AOS.init({
+					duration: 1000,
+					easing: "ease",
+					once: true, // whether animation should happen only once - while scrolling down
+				});
+				
+		
+			</script>
+			<button style="border-radius: 100%;" onclick="topFunction()" id="myBtn" >
+				<img src="./images/up-arrow.png" alt="alternative">
+			</button>
+		</div>
+
+
 					<div align="center" >
 						<a href="https://tbs-it.net/">
 							<img src="images/TBS-IT1.jpg" style="width:22%; height:auto">
