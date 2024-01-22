@@ -80,7 +80,7 @@
 			filter: brightness(120%); /* Puedes ajustar el valor según lo necesites */
 		}
 		</style>
-
+		<!-- pagina principal -->
 		<section id="banner" class="bg-img" data-bg="dios.jpg">
 			<div class="inner" style="margin:auto;">
 				<!-- Contenedor de la imagen con la clase 'imagen-container' -->
@@ -130,40 +130,60 @@
 						<h2>Mus elit a ultricies at</h2>
 						<p>12.21.2016</p>
 					</header>
-					<style>
-						/* Estilos generales */
-						.content {
-							width: 60%;
-							float: left;
-						}
-				
-						img {
-							width: 10%;
-							height: auto;
-						}
-				
-						/* Media query para formato landscape (ancho mayor a 600px) */
-						@media only screen and (min-width: 600px) {
-							.content {
-								width: 40%;
+					<!DOCTYPE html>
+					<html lang="es">
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1.0">
+						<style>
+							.container {
+								display: flex;
+								flex-direction: column;
+								width:100%
 							}
-						}
-					</style>
-				
-					<div class="container">
-						<div class="content">
-							<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+					
+							@media only screen and (min-width: 600px) {
+								/* Aplicar el orden normal en dispositivos mayores a 600px */
+								.container {
+									flex-direction: row;
+								}
+								.content {
+								width: 100% !important;
+								padding: auto;
+								margin: auto;
+								}
+					
+								#1 {
+									order: 1;
+								}
+					
+								#2 {
+									order: 2;
+								}
+							}
+					
+							.content {
+								width: 50% !important;
+								padding: 0.5rem;
+								margin: 0.5rem;
+							}
+						</style>
+					</head>
+					<body>
+						<div class="container">
+							<div id="1" class="content">
+								<p>Scelerisque enim mi curae erat ultricies lobortis donec velit in per cum consectetur purus a enim platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin sociosqu a parturient nam ac blandit praesent aptent. Eros dignissim mus mauris a natoque ad suspendisse nulla a urna in tincidunt tristique enim arcu litora scelerisque eros suspendisse.</p>
+							</div>
+							<div id="2" class="content">
+								<img src="images/mario.jpg" style="width:50%; height:auto" alt="">
+							</div>
 						</div>
-						<div>
-							<img src="images/mario.jpg" alt="">
-						</div>
-					</div>
 					<footer>
 						<a href="generic.html" class="button alt">Learn More</a>
 					</footer>
 				</article>
 			</div>
-			<a href="#three" class="more">Learn More</a>
+			<a href="#two" class="more">Saber mas</a>
 		</section>
 
 	
