@@ -2272,6 +2272,7 @@
 		text-decoration: none;
 		display: block;
 		position: relative;
+		opacity: 0.9;
 	}
 
 		.select-wrapper:before {
@@ -3908,7 +3909,7 @@
 	}
 
 		.post .box {
-			margin: 0;
+			margin: 0.5rem;
 		}
 
 	@-moz-keyframes inner {
