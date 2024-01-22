@@ -363,42 +363,71 @@
 					</form>
 
 	
-		<div align="right">
-			<!-- Back To Top Button -->
-			<script>
+	<!-- boton para volver arriba -->
 
-				/* BACK TO TOP BUTTON */
-				// GET THE BUTTON
-				myButton = document.getElementById("myBtn");
-				
-				// WHEN THE USER SCROLLS DOWN 20PX FROM THE TOP OF THE DOCUMENT, SHOW THE BUTTON
-				function scrollFunctionBTT() {
-					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-						myButton.style.display = "block";
-					} else {
-						myButton.style.display = "none";
-					}
-				}
-				
-				// WHEN THE USER CLICKS ON THE BUTTON, SCROLL TO THE TOP OF THE DOCUMENT
-				function topFunction() {
-					document.body.scrollTop = 0; // for Safari
-					document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
-				}
-				
-				// AOS ANIMATION ON SCROLL
-				AOS.init({
-					duration: 1000,
-					easing: "ease",
-					once: true, // whether animation should happen only once - while scrolling down
-				});
-				
-		
-			</script>
-			<button style="border-radius: 100%;" onclick="topFunction()" id="myBtn" >
-				<img src="./images/up-arrow.png" alt="alternative">
-			</button>
-		</div>
+    <style>
+        #scrollToTop {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: #fff;
+            padding: 10px;
+			margin: 0;
+            border: none;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    </style>
+
+<!-- Tu contenido actual aquí -->
+
+<button id="scrollToTop"><img src="images/up-arrow.png" alt=""></button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var scrollToTopButton = document.getElementById('scrollToTop');
+
+        // Muestra u oculta el botón según el desplazamiento
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+        // Desplazamiento suave hacia arriba al hacer clic en el botón
+        scrollToTopButton.addEventListener('click', function () {
+            var currentPosition = window.scrollY;
+            var targetPosition = 10;
+            var duration = 1000; // Duración del desplazamiento en milisegundos
+            var startTime = null;
+
+            function scrollToTop(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = timestamp - startTime;
+
+                window.scrollTo(0, easeInOutCubic(progress, currentPosition, targetPosition - currentPosition, duration));
+
+                if (progress < duration) {
+                    requestAnimationFrame(scrollToTop);
+                }
+            }
+
+            requestAnimationFrame(scrollToTop);
+        });
+
+        // Función de temporización de aceleración y desaceleración (easeInOutCubic)
+        function easeInOutCubic(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t * t + b;
+            t -= 2;
+            return c / 2 * (t * t * t + 2) + b;
+        }
+    });
+</script>
+
 
 
 					<div align="center" >
