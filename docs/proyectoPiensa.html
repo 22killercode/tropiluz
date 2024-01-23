@@ -2,6 +2,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+							<!-- Incluye la biblioteca Bootstrap CSS -->
+							<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body class="subpage">
 	<!-- Header -->
@@ -34,45 +37,68 @@
 			<div class="inner">
 				<article class="box">
 					<header>
-						<h2>Proyecto piensa 7 temas para pensar con luz</h2>
+						<h2>Proyecto piensa</h2>
 					</header>
-					<div class="videos-container" style="margin-top: -2rem;">
-						<!-- YouTube video -->
-						<!-- YouTube video -->
-						<div class="video-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- YouTube video -->
-						<div class="video-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- YouTube video -->
-						<div class="video-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- YouTube video -->
-						<div class="video-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- YouTube video -->
-						<div class="video-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
-						</div>
-						<!-- Facebook video -->
-						<div class="video-container">
-							<iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2F1101991500993201%2Fvideos%2F1101991500993201%2F&show_text=false&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-						</div>
-						<!-- Facebook video -->
-						<div class="video-container" hidden>
-							<iframe src="https://www.facebook.com/100009830139639/videos/3492422037664797/" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-						</div>
-						<!-- Facebook video -->
-						<div class="video-container" hidden>
-							<iframe src="https://www.facebook.com/reel/344635611291715" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-						</div>
+					<head>
+						<p style="color: white;">7 temas para pensar con luz</p>
+						<style>
+
+							.videos-container {
+								height: 80vh; /* 100% de la altura visible */
+								overflow-y: auto;
+								display: flex;
+								flex-wrap: wrap; /* Envuelve los videos en una nueva línea si no caben en el ancho */
+								align-items: center;
+								justify-content: center;
+							}
+
+							.video-container {
+								width: calc(100% - 20px); /* Ajusta el porcentaje según tu preferencia y considera el margen */
+								max-width: 560px; /* Ancho máximo de cada video */
+								margin: 10px; /* Espacio entre los videos */
+							}
+						</style>
+					</head>
+				<div class="videos-container">
+					<!-- YouTube video -->
+					<div class="video-container mb-3">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/VF3xgwyqeUk" frameborder="0" allowfullscreen></iframe>
 					</div>
-				</article>
-			</div>
+					<!-- YouTube video -->
+					<div class="video-container mb-3">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/W8Oj-YkPCcY" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<!-- YouTube video -->
+					<div class="video-container mb-3">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/RJ4tQ3gWh4U" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<!-- YouTube video -->
+					<div class="video-container mb-3">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0DgiLNLsiOs" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<!-- YouTube video -->
+					<div class="video-container mb-3">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<!-- YouTube video -->
+					<div class="video-container mb-3">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/WLDbSB0MLsk" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+					<!-- Facebook video -->
+					<div class="video-container mb-3" hidden>
+						<iframe src="https://www.facebook.com/100009830139639/videos/3492422037664797/" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					</div>
+					<!-- Facebook video -->
+					<div class="video-container mb-3">
+						<iframe src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2F1101991500993201%2Fvideos%2F1101991500993201%2F&show_text=false&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					</div>
+					<!-- Facebook video -->
+					<div class="video-container mb-3" hidden>
+						<iframe src="https://www.facebook.com/reel/344635611291715" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					</div>
+				</div>					
+			</div>					
 		</section>
 
 	<!-- Footer -->
