@@ -36,8 +36,7 @@
 				<li><a href="https://teamsoftdigital.com/tropiluzradio">Ir a nuestra radio Tropiluz</a></li>
 				<li><a href="#two">Origen de Tropiluz</a></li>
 				<li><a href="#tree">Proyecto piensa & Eventos</a></li>
-				<li><a href="#four">Organizaciones & eventos</a></li>
-				<li><a href="elements.html">Nuestra Comunidad</a></li>
+				<li><a href="#four">Nuestra Comunidad & Familia</a></li>
 				<li><a href="#contacto">Tus oraciones & publicidad aquí</a></li>
 			</ul>
 		</nav>
@@ -238,7 +237,7 @@
         }
 					</style>
 <div class="container">
-    <div id="1" class="content">
+    <div id="1" class="content" style="text-align:left">
         Tropiluzradio, un ministerio cristiano, comparte el evangelio y respalda a músicos emergentes. Su lema, "Somos Tropiluzradio, una radio con luz propia, la luz de Dios", refleja su misión. Fundado por Mario Pereyra, talentoso cantautor contemporáneo, Tropiluz Radio es un refugio apasionado que va más allá de la música conmovedora. Pereyra ha dejado un legado que trasciende las fronteras musicales, demostrado por el impacto positivo en sus seguidores. La comunidad de Tropiluz Radio fusiona música y espiritualidad, creando un espacio armónico de amor y admiración por este talentoso artista. Su programación irradia la luz divina que transforma almas.
     </div>
     <div id="2" class="content">
@@ -277,8 +276,9 @@
 						</div>
 						<div class="col">
 							<div class="video-container">
-								<br><br><br>
-								<iframe width="100%" height="auto" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen></iframe>
+								<br>
+								<iframe width="140%" height="80%" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen style="border-radius: 1rem;">
+								</iframe>
 							</div>
 						</div>
 					</div>
@@ -290,35 +290,71 @@
 			<a href="#four" class="more" >Learn More</a>
 		</section>
 		
-		<!-- Four -->
-		<section id="four" class="wrapper post bg-img" data-bg="banner3.jpg" >
+		<!-- comnidad & familai -->
+		<section id="four" class="wrapper post bg-img" data-bg="banner5.jpg">
 			<div class="inner">
 				<article class="box">
 					<header>
-						<h2>Actos & Eventos</h2>
+					<h2>Comunidad & familia</h2>
 					</header>
-					<div class="content">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="images/marioyradio.jpg" alt="Foto 1">
-							</div>
-							<div class="col-md-6">
-								<img src="images/musicacristiana.jpg" alt="Foto 2">
-							</div>
-							<div class="col-md-6">
-								<img src="images/eventos.jpg" alt="Foto 3">
-							</div>
-							<div class="col-md-6">
-								<img src="images/coro.jpg" alt="Foto 4">
-							</div>
-							<!-- Repite este patrón para las demás imágenes -->
-						</div>
-					</div>
-					<footer>
-						<a href="generic.html" class="button alt">Learn More</a>
+					<style>
+						.container {
+							display: flex;
+							flex-direction: column;
+							width: 100%;
+						}
+						@media only screen and (min-width: 600px) {
+							/* Aplicar el orden normal en dispositivos mayores a 600px */
+							.container {
+							flex-direction: row;
+							}
+				
+							.content {
+							width: 50% !important;
+							padding: 0.5rem;
+							margin: 0.5rem;
+							}
+				
+							#1 {
+							order: 1;
+							}
+				
+							#2 {
+							order: 2;
+							}
+						}
+						@media only screen and (max-width: 600px) and (orientation: portrait) {
+							/* Expandir al máximo en dispositivos móviles en modo retrato */
+							.content {
+							width: 100% !important;
+							padding: 0.5rem;
+							margin: 0.5rem;
+							}
+						}
+						video {
+            border-radius: 1rem;
+            width: 100%; /* Hace que el video ocupe el 100% del contenedor */
+            height: auto;
+        }
+					</style>
+<div class="container">
+    <div id="1" class="content" style="text-align:left">
+		Descubra la fascinante vida de Mario Pereyra, un destacado cantautor y pastor evangelista contemporáneo. Su conexión única con la fe y su inquebrantable dedicación para difundir un mensaje espiritual a través de la música lo convierten en un faro de inspiración. Explore cómo su música y enseñanzas han impactado positivamente en su comunidad, guiándola hacia la esperanza y el amor. Una familia, llena de valores y dedicación. La vida de Mario Pereyra es un relato que trasciende melodías, compartiendo un legado de fe, servicio y amor por la humanidad.
+    </div>
+    <div id="2" class="content">
+        <div class="">
+			<br>
+			<img src="images/enelaltar.jpg" alt="" style="border-radius: 1rem;">
+		</div>
+	</div>
+</div>
+					<footer align="left">
+						<a href="comunidad.html" class="button alt">Saber más</a>
 					</footer>
 				</article>
 			</div>
+			<a href="#tree" class="more">Saber mas</a>
+
 		</section>
 		
 	</div>	
