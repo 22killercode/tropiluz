@@ -200,7 +200,8 @@
 						.container {
 							display: flex;
 							flex-direction: column;
-							width: 100%;
+							width: 100% !important;
+							margin: auto;
 						}
 						@media only screen and (min-width: 600px) {
 							/* Aplicar el orden normal en dispositivos mayores a 600px */
@@ -217,7 +218,7 @@
 							#1 {
 							order: 1;
 							}
-				
+			
 							#2 {
 							order: 2;
 							}
@@ -225,6 +226,7 @@
 						@media only screen and (max-width: 600px) and (orientation: portrait) {
 							/* Expandir al máximo en dispositivos móviles en modo retrato */
 							.content {
+								align-items: center !important;
 							width: 100% !important;
 							padding: 0.5rem;
 							margin: 0.5rem;
@@ -240,12 +242,11 @@
     <div id="1" class="content" style="text-align:left">
         Tropiluzradio, un ministerio cristiano, comparte el evangelio y respalda a músicos emergentes. Su lema, "Somos Tropiluzradio, una radio con luz propia, la luz de Dios", refleja su misión. Fundado por Mario Pereyra, talentoso cantautor contemporáneo, Tropiluz Radio es un refugio apasionado que va más allá de la música conmovedora. Pereyra ha dejado un legado que trasciende las fronteras musicales, demostrado por el impacto positivo en sus seguidores. La comunidad de Tropiluz Radio fusiona música y espiritualidad, creando un espacio armónico de amor y admiración por este talentoso artista. Su programación irradia la luz divina que transforma almas.
     </div>
-    <div id="2" class="content">
+    <div id="2" class="content" style="margin: 0 0.5rem !important;">
         <div class="embed-responsive embed-responsive-16by9">
 			<br><br><br>
             <video controls class="embed-responsive-item" style="border-radius: 1rem;">
                 <source src="images/video.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
             </video>
         </div>
 	</div>
@@ -266,21 +267,22 @@
 					<header>
 						<h2>Proyecto piensa</h2>
 					</header>
-					<div class="row">
-						<div class="col">
+					<div class="container">
 							<div class="content" style="text-align:left">
 								<p>
 									Proyecto Piensa, una producción musical cristiana, se une a Tropiluzradio en la misión de resaltar a Cristo como su objetivo central. Su enfoque es que el nombre de Cristo sea el motivo de la vida diaria y que a través de la música, el testimonio sea el vehículo para alcanzar el amor de Dios a las personas. En colaboración con el talentoso cantautor contemporáneo Mario Pereyra, fundador de Tropiluz Radio, Proyecto Piensa amplifica la espiritualidad y el mensaje evangélico a través de composiciones que trascienden barreras. Esta fusión musical y espiritual crea un espacio donde la fe se expresa de manera auténtica, conectando con aquellos que buscan la luz divina a través de la música cristiana.
 								</p>
 							</div>
-						</div>
-						<div class="col">
-							<div class="video-container">
+							<style>
+								iframe{
+									width:100% !important;
+								}
+							</style>
+							<div class=" content video-container">
 								<br>
 								<iframe width="140%" height="80%" src="https://www.youtube.com/embed/5SUvpJ2zUrE" frameborder="0" allowfullscreen style="border-radius: 1rem;">
 								</iframe>
 							</div>
-						</div>
 					</div>
 					<footer align="left">
 						<a href="proyectoPiensa.html" class="button alt">Saber más</a>
