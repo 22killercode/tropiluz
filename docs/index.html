@@ -64,27 +64,25 @@
                 cursor: pointer;
             }
         </style>
+        <div id="mensajeEnvio">
+            <span id="cerrarMensaje" onclick="cerrarMensaje()">&times;</span>
+            Mensaje enviado exitosamente.
+        </div>
+        <script>
+            // Obtener la URL actual
+            var urlActual = window.location.href;
 
-<div id="mensajeEnvio">
-    <span id="cerrarMensaje" onclick="cerrarMensaje()">&times;</span>
-    Mensaje enviado exitosamente.
-</div>
+            // Verificar si la URL contiene el fragmento deseado
+            if (urlActual.includes("#mensajeEnvio")) {
+                // Mostrar el div
+                document.getElementById("mensajeEnvio").style.display = "block";
+            }
 
-<script>
-    // Obtener la URL actual
-    var urlActual = window.location.href;
-
-    // Verificar si la URL contiene el fragmento deseado
-    if (urlActual.includes("#mensajeEnvio")) {
-        // Mostrar el div
-        document.getElementById("mensajeEnvio").style.display = "block";
-    }
-
-    // Función para cerrar el mensaje
-    function cerrarMensaje() {
-        document.getElementById("mensajeEnvio").style.display = "none";
-    }
-</script>
+            // Función para cerrar el mensaje
+            function cerrarMensaje() {
+                document.getElementById("mensajeEnvio").style.display = "none";
+            }
+        </script>
 
 
 
