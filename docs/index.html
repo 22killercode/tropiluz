@@ -41,49 +41,51 @@
 				<li><a href="#contacto">Pide un tema aquí</a></li>
 			</ul>
 		</nav>
+<!-- // aviso de mensjae enviado -->
+<style>
+    /* Estilos adicionales para resaltar el mensaje */
+    #mensajeEnvio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #4CAF50; /* Color verde */
+        color: white;
+        padding: 15px;
+        text-align: center;
+        z-index: 1000; /* Asegura que aparezca por encima de otros elementos */
+        display: none; /* Inicialmente oculto */
+        font-size: 16px;
+    }
 
-        <style>
-            /* Estilos adicionales para resaltar el mensaje */
-            #mensajeEnvio {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                background-color: #4CAF50; /* Color verde */
-                color: white;
-                padding: 15px;
-                text-align: center;
-                z-index: 1000; /* Asegura que aparezca por encima de otros elementos */
-                display: none; /* Inicialmente oculto */
-            }
-    
-            #cerrarMensaje {
-                position: absolute;
-                top: 5px;
-                right: 10px;
-                cursor: pointer;
-            }
-        </style>
-        <div id="mensajeEnvio">
-            <span id="cerrarMensaje" onclick="cerrarMensaje()">&times;</span>
-            Mensaje enviado exitosamente.
-        </div>
-        <script>
-            // Obtener la URL actual
-            var urlActual = window.location.href;
+    #cerrarMensaje {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+</style>
+<div id="mensajeEnvio">
+    <span id="cerrarMensaje" onclick="cerrarMensaje()">&times;</span>
+    Mensaje enviado exitosamente.
+</div>
+<script>
+    // Obtener la URL actual
+    var urlActual = window.location.href;
 
-            // Verificar si la URL contiene el fragmento deseado
-            if (urlActual.includes("#mensajeEnvio")) {
-                // Mostrar el div
-                document.getElementById("mensajeEnvio").style.display = "block";
-            }
+    // Verificar si la URL contiene el fragmento deseado
+    if (urlActual.includes("#mensajeEnvio")) {
+        // Mostrar el div
+        document.getElementById("mensajeEnvio").style.display = "block";
+    }
 
-            // Función para cerrar el mensaje
-            function cerrarMensaje() {
-                document.getElementById("mensajeEnvio").style.display = "none";
-            }
-        </script>
-
+    // Función para cerrar el mensaje
+    function cerrarMensaje() {
+        document.getElementById("mensajeEnvio").style.display = "none";
+    }
+</script>
+<!--  -->
 
 
 
